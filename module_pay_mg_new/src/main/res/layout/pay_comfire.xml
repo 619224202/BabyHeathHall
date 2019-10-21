@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pay_confirm_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ImageView
+        android:id="@+id/pBg"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#30000000"
+        android:src="@drawable/other_bg"
+        android:contentDescription="TODO" />
+    <!--android:layout_width="678dp"-->
+    <!--android:layout_height="359dp"-->
+    <ImageView
+        android:id="@+id/thirdPay"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="124dp"
+        android:contentDescription="TODO"
+        android:src="@drawable/ll"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.581" />
+
+    <ImageView
+        android:id="@+id/xk3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kx3"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="@id/thirdPay"
+        app:layout_constraintTop_toTopOf="@id/thirdPay"
+        app:layout_constraintVertical_bias="0.91" />
+
+    <ImageView
+        android:id="@+id/xk2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kx2"
+        app:layout_constraintBottom_toBottomOf="@id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.424"
+        app:layout_constraintStart_toStartOf="@id/thirdPay"
+        app:layout_constraintTop_toTopOf="@id/thirdPay"
+        app:layout_constraintVertical_bias="0.515" />
+
+    <ImageView
+        android:id="@+id/xk1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/kx1"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.891"
+        app:layout_constraintStart_toStartOf="@id/thirdPay"
+        app:layout_constraintTop_toTopOf="@id/thirdPay"
+        app:layout_constraintVertical_bias="0.594" />
+
+    <TextView
+        android:id="@+id/priceText1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="30"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.631"
+        app:layout_constraintStart_toStartOf="@+id/thirdPay"
+        app:layout_constraintTop_toTopOf="@+id/thirdPay"
+        app:layout_constraintVertical_bias="0.101" />
+
+    <TextView
+        android:id="@+id/phoneText2"
+        android:layout_width="117dp"
+        android:layout_height="22dp"
+        android:gravity="center"
+        android:text="15857162793"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.776"
+        app:layout_constraintStart_toStartOf="@+id/thirdPay"
+        app:layout_constraintTop_toTopOf="@+id/thirdPay"
+        app:layout_constraintVertical_bias="0.205" />
+
+    <!--<TextView-->
+        <!--android:id="@+id/equationText"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="5 + 8 = "-->
+        <!--android:textColor="@color/equation_color"-->
+        <!--android:shadowColor="#8F4923"-->
+        <!--android:shadowRadius="3.0"-->
+        <!--android:textSize="70sp"-->
+        <!--android:textStyle="bold"-->
+        <!--app:layout_constraintBottom_toBottomOf="@+id/thirdPay"-->
+        <!--app:layout_constraintEnd_toEndOf="@+id/thirdPay"-->
+        <!--app:layout_constraintHorizontal_bias="0.655"-->
+        <!--app:layout_constraintStart_toStartOf="@+id/thirdPay"-->
+        <!--app:layout_constraintTop_toTopOf="@+id/thirdPay"-->
+        <!--app:layout_constraintVertical_bias="0.338" />-->
+    <com.module.swpay.view.EquationView
+        android:id="@+id/equationView"
+        android:layout_width="159dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.623"
+        app:layout_constraintStart_toStartOf="@+id/thirdPay"
+        app:layout_constraintTop_toTopOf="@+id/thirdPay"
+        app:layout_constraintVertical_bias="0.342" />
+
+    <com.module.swpay.view.ResultView
+        android:id="@+id/numResult"
+        android:layout_width="52dp"
+        android:layout_height="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.857"
+        app:layout_constraintStart_toStartOf="@+id/thirdPay"
+        app:layout_constraintTop_toTopOf="@+id/thirdPay"
+        app:layout_constraintVertical_bias="0.371" />
+
+</android.support.constraint.ConstraintLayout>

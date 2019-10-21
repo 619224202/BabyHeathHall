@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="cl_default">#424242</color>
+    <color name="cl_error">#ffffff</color>
+    <color name="price_color">#74BDAA</color>
+    <color name="phone_color">#ffffff</color>
+    <color name="equation_color">#FCF7E3</color>
+    <color name="text_back">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="write">#ffffff</color>
+</resources>

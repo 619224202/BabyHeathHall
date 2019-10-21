@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/thirdPay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:src="@drawable/paybg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="187dp"
+        android:layout_height="77dp"
+        android:src="@drawable/kx3"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="@+id/thirdPay"
+        app:layout_constraintTop_toTopOf="@+id/thirdPay"
+        app:layout_constraintVertical_bias="0.909" />
+
+    <TextView
+        android:id="@+id/phoneText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/phone_color"
+        android:textSize="24sp"
+        android:text="15857162793"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.516"
+        app:layout_constraintStart_toStartOf="@+id/thirdPay"
+        app:layout_constraintTop_toTopOf="@+id/thirdPay"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <TextView
+        android:id="@+id/priceText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/price_color"
+        android:textSize="14sp"
+        android:text="30元"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/thirdPay"
+        app:layout_constraintEnd_toEndOf="@+id/thirdPay"
+        app:layout_constraintHorizontal_bias="0.240"
+        app:layout_constraintStart_toStartOf="@+id/thirdPay"
+        app:layout_constraintTop_toTopOf="@+id/thirdPay"
+        app:layout_constraintVertical_bias="0.243" />
+
+</android.support.constraint.ConstraintLayout>

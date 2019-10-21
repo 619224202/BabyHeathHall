@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/black">
+
+    <tv.danmuku.ijk.IjkVideoView
+        android:id="@+id/ijkview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </tv.danmuku.ijk.IjkVideoView>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:background="@color/ijk_transparent_dark"
+        android:id="@+id/ll_control"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_current_time"
+            android:layout_marginLeft="10dp"
+            android:text="00:00"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#fff"/>
+
+        <SeekBar
+            android:layout_gravity="center_vertical"
+            android:progressDrawable="@drawable/drawable_seekbar"
+            android:thumb="@drawable/thumb_circle"
+            android:id="@+id/seekbar"
+            android:layout_width="0dp"
+            android:max="100"
+            android:layout_weight="1"
+            android:maxHeight="50dp"
+            android:minHeight="8dp"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/tv_total_time"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#fff"/>
+
+        <ImageView
+            android:id="@+id/iv_play_screen"
+            android:layout_marginRight="5dp"
+            android:layout_gravity="center_vertical"
+            android:src="@mipmap/jz_enlarge"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+    </LinearLayout>
+
+    <ImageView
+        android:visibility="gone"
+        android:id="@+id/iv_play_status"
+        android:src="@mipmap/jz_restart_normal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"/>
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <ImageView
+        android:id="@+id/loadbg"
+        android:src="@drawable/bbzhwbg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:text="正在加载..."/>
+
+    </LinearLayout>
+
+    <!--快进快退 or 声音 or 亮度-->
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/tv_progress"
+        android:layout_centerInParent="true"
+        android:background="@color/ijk_transparent_dark"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:drawablePadding="4dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <TextView
+        android:visibility="gone"
+        android:id="@+id/error"
+        android:layout_centerInParent="true"
+        android:background="@color/ijk_transparent_dark"
+        android:layout_width="100dp"
+        android:gravity="center"
+        android:textColor="#fff"
+        android:text="@string/todo"
+        android:drawablePadding="4dp"
+        android:padding="10dp"
+        android:layout_height="wrap_content">
+    </TextView>
+
+</RelativeLayout>

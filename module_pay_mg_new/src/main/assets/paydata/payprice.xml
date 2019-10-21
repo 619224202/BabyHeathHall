@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<message module="SCSP" version="1.1">
+    <header action="REQUEST" command="PRO_TO_CONTNET"/>
+    <body>
+        <proToContent operation="2">
+            <platform>wasu</platform>
+            <contentId><![CDATA[1234;12345;43343;66666;222]]></contentId>
+            <strategyCode><![CDATA[华数基本包]]></strategyCode >
+        </proToContent>
+    </body>
+</message>
